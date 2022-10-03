@@ -1,0 +1,331 @@
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:  white;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  font-family:Helvetica,sans-serif;
+}
+
+.grid {
+  display: flex;
+  height:400px;
+}
+
+header {
+  position: fixed;
+  top:0;
+  min-height: 75px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  z-index:4;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+#hero > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#hero input[type='email'] {
+  max-width: 400px;
+  width: 100%;
+  padding: 5px;
+}
+
+#hero input[type='submit'] {
+  max-width: 200px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: red;
+}
+
+#hero input[type='submit']:hover, input[type='button']:hover{
+  background-color: white;
+  color:black;
+  transition: background-color 1s, color 1s;
+}
+
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 120px;
+  }
+}
+
+#features {
+  margin-top: 30px;
+}
+
+#features h2{
+    font-size:30px;
+}
+
+
+#features .promo-video, #desc2, #desc{
+  display: flex;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  margin:20px;
+}
+
+#img-1,#img-2{
+    margin:20px;
+}
+
+.learn{
+    margin-top: 30px;
+    background-color: red;
+    padding:10px;
+    font-size: 20px;
+}
+
+@media (max-width: 550px) {
+  #features .promo-video, #features #img-1{
+    display: none;
+  }
+
+}
+
+#features #desc,#features #desc2  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+  margin-top:100px;
+  text-align: justify;
+}
+
+
+
+@media (max-width: 550px) {
+  #features #desc, #features #desc2  {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
+  }
+
+}
+
+#gameplay{
+  margin-top: 50px;
+  display: block;
+  justify-content: center;
+}
+
+#gameplay > iframe {
+  max-height:563px;
+  min-height: 480px;
+  min-width:854px;
+  margin:73px;
+
+}
+
+#gameplay h2{
+    text-align: center;
+    display: block;
+    font-size: 50px;
+    
+}
+
+.header-space
+{
+  height:75px;
+  width:1000px;
+}
+
+#editions{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:50px;
+  
+}
+
+.option img, .option h4, .option p{
+  width:calc(150%/3);
+}
+
+.option{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:calc(100%/3);
+  margin:5px;
+  border:none;
+  font-family: Helvetica,sans-serif;
+  overflow: clip;
+}
+
+.option  h4{
+  font-size: 20px;
+  text-align:center;
+  margin:0;
+  margin-top:20px;
+}
+
+
+ 
+.btn-edition{
+background:red;
+color: white;
+font-family:Helvetica, sans-serif; 
+font-weight: 700;
+font-size:20px;
+height:50px;
+text-decoration: none;
+padding:5px;
+position: relative;
+bottom:-5px;
+}
+
+
+#pre-order > p{
+  margin-top: 0;
+  align-items: center;
+  width:100vw;
+  justify-content: center;
+
+}
+
+@media (max-width: 900px) {
+  #editions {
+    flex-direction: column;
+  }
+}
+
+
